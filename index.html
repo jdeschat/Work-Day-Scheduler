@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- FIND LINK FOR FONT AWESOME -->
+  <link rel="stylesheet" href="https://fontawesome.com/v6.0/icons?">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Work Day Scheduler</title>
 </head>
 
@@ -21,7 +23,22 @@
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
-
+    <!-- row 1: 9AM -->
+    <div class="row time-block">
+      <div class="col-md-2 hour"> 9AM</div>
+      <textarea name="toDo" class="description past col-md-9" cols="30" rows="4"></textarea>
+      <button class="saveBtn col-md-1">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+    </div>
+    <!-- row 2: 10AM -->
+    <div class="row time-block">
+      <div class="col-md-2 hour"> 10AM</div>
+      <textarea name="toDo" class="description past col-md-9" cols="30" rows="4"></textarea>
+      <button class="saveBtn col-md-1">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

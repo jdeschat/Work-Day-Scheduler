@@ -14,7 +14,13 @@ $(document).ready(function () {// tells engine to load html then css first.
     });
 
     // TODO: Local storage
-
+    for (let i = 9; i < 18; i++) {
+        var storedTask = localStorage.getItem(i);
+        console.log(storedTask);
+        var dataTime = $(`div[data-time=${i}]`).children(".description");
+        dataTime.val(storedTask);
+        console.log(dataTime);
+    }
 
     // change color of blocks based on time
     function checkTime() {

@@ -21,6 +21,10 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+.lead {
+  font-family: open-sans;
+}
+
 .description{
   white-space: pre-wrap;
 }
@@ -33,7 +37,8 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  /* WHY ISNT THIS WORKING */
+  border-top: 1px solid white;
 }
 
 .hour {

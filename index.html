@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <!-- FIND LINK FOR FONT AWESOME -->
-  <link rel="stylesheet" href="https://fontawesome.com/v6.0/icons?">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Work Day Scheduler</title>
@@ -24,16 +23,90 @@
   <div class="container">
     <!-- Timeblocks go here -->
     <!-- row 1: 9AM -->
-    <div class="row time-block">
-      <div class="col-md-2 hour"> 9AM</div>
+    <div class="row time-block" data-time="9">
+      <div class="col-md-2 hour">
+        <p>9AM</p>
+      </div>
       <textarea name="toDo" class="description past col-md-9" cols="30" rows="4"></textarea>
       <button class="saveBtn col-md-1">
         <i class="fa-solid fa-floppy-disk"></i>
       </button>
     </div>
     <!-- row 2: 10AM -->
-    <div class="row time-block">
-      <div class="col-md-2 hour"> 10AM</div>
+    <div class="row time-block" data-time="10">
+      <div class="col-md-2 hour">
+        <p>10AM</p>
+      </div>
+      <textarea name="toDo" class="description past col-md-9" cols="30" rows="4"></textarea>
+      <button class="saveBtn col-md-1">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+    </div>
+    <!-- row 2: 11AM -->
+    <div class="row time-block" data-time="11">
+      <div class="col-md-2 hour">
+        <p>11AM</p>
+      </div>
+      <textarea name="toDo" class="description past col-md-9" cols="30" rows="4"></textarea>
+      <button class="saveBtn col-md-1">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+    </div>
+    <!-- row 2: 12PM -->
+    <div class="row time-block" data-time="12">
+      <div class="col-md-2 hour">
+        <p>12PM</p>
+      </div>
+      <textarea name="toDo" class="description past col-md-9" cols="30" rows="4"></textarea>
+      <button class="saveBtn col-md-1">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+    </div>
+    <!-- row 2: 1PM -->
+    <div class="row time-block" data-time="13">
+      <div class="col-md-2 hour">
+        <p>1PM</p>
+      </div>
+      <textarea name="toDo" class="description past col-md-9" cols="30" rows="4"></textarea>
+      <button class="saveBtn col-md-1">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+    </div>
+    <!-- row 2: 2PM -->
+    <div class="row time-block" data-time="14">
+      <div class="col-md-2 hour">
+        <p>2PM</p>
+      </div>
+      <textarea name="toDo" class="description past col-md-9" cols="30" rows="4"></textarea>
+      <button class="saveBtn col-md-1">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+    </div>
+    <!-- row 2: 3PM -->
+    <div class="row time-block" data-time="15">
+      <div class="col-md-2 hour">
+        <p>3PM</p>
+      </div>
+      <textarea name="toDo" class="description past col-md-9" cols="30" rows="4"></textarea>
+      <button class="saveBtn col-md-1">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+    </div>
+    <!-- row 2: 4PM -->
+    <div class="row time-block" data-time="16">
+      <div class="col-md-2 hour">
+        <p>4PM</p>
+      </div>
+      <textarea name="toDo" class="description past col-md-9" cols="30" rows="4"></textarea>
+      <button class="saveBtn col-md-1">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+    </div>
+    <!-- row 2: 5PM -->
+    <div class="row time-block" data-time="17">
+      <div class="col-md-2 hour">
+        <p>5PM</p>
+      </div>
       <textarea name="toDo" class="description past col-md-9" cols="30" rows="4"></textarea>
       <button class="saveBtn col-md-1">
         <i class="fa-solid fa-floppy-disk"></i>
@@ -43,6 +116,9 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!-- Added for the time -->
+  <!-- https://stackoverflow.com/questions/61006336/examining-multiple-elements-to-determine-their-color-using-jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 

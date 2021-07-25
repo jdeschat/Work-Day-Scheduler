@@ -1,5 +1,5 @@
 // get today's date
-$(document).ready(function () {// tells engine to load html then css first.
+$(document).ready(function () {// tell engine to load html then css first.
     //display current day & time.
     $("#currentDay").text(moment().format("MMMM Do YYYY")); // use of moment.js
     //assign saveBtn click listener for user input and time stamp??
@@ -13,7 +13,7 @@ $(document).ready(function () {// tells engine to load html then css first.
         localStorage.setItem(time, text);
     });
 
-    // TODO: Local storage
+    // Save items to Local storage
     for (let i = 9; i < 18; i++) {
         var storedTask = localStorage.getItem(i);
         console.log(storedTask);
@@ -29,8 +29,6 @@ $(document).ready(function () {// tells engine to load html then css first.
         console.log(currentHour);
         // loop through each hour using Jquery
         $(".time-block").each(function () {
-            // var scheduleHour = parseInt($(this).attr("id").split("hour")[1]);
-            // INSTEAD: can i make the variable = to "data-time"?
             var scheduleHour = $(this).attr("data-time");
             scheduleHour = parseInt(scheduleHour);
             var colourTextArea = $(this).children(".description");
@@ -55,13 +53,3 @@ $(document).ready(function () {// tells engine to load html then css first.
     }
     checkTime();
 });
-
-
-
-// getting current hours from timestamp;
-// var date = new Date();
-// var time = date.getHours();
-
-// once document is loaded and ready
-// $(document).ready(function () {
-//     var rows = $("div.row")

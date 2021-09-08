@@ -57,7 +57,7 @@ To install this application, clone the code into your terminal for the respectiv
 4. You can edit your tasks as you wish
 
 ## Contributors
-To contribute to Professional-README-generator, clone this repo locally and commit your code on a separate branch.
+To contribute to Work-Day-Scheduler, clone this repo locally and commit your code on a separate branch.
   
 Contributors:
 
